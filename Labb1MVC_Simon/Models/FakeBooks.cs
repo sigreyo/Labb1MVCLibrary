@@ -1,11 +1,12 @@
 ﻿using Bogus;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Schema;
 
 namespace Labb1MVC_Simon.Models
 {
     public class FakeBooks
-    {    
+    {
         //API to populate booklist
 
         public static async Task<List<Book>> GetBooksFromApi()
@@ -34,15 +35,21 @@ namespace Labb1MVC_Simon.Models
                         tempAuthorList.Add(author.ToString());
 
                     }
+                    try
+                    {
+                        foreach (var cat in item["categories"])
+                        {
+                            tempCategoryList.Add(cat.ToString());
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e);
+                        tempCategoryList.Add("Undefined");
+                    }
 
-                    //foreach (var cat in item["categories"])
-                    //{
-                    //    if (cat != null)
-                    //    {
-                    //        tempCategoryList.Add(cat.ToString());
 
-                    //    }
-                    //}
+
 
                     tempbook.Author = string.Join(", ", tempAuthorList);
                     tempbook.Category = string.Join(", ", tempCategoryList);
