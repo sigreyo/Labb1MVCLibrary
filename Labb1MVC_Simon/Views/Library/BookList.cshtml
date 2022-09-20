@@ -1,0 +1,8 @@
+﻿@model BookListViewModel
+
+<div class="row">
+    @foreach (var item in Model.Books)
+    {
+        <partial name="components//_bookCard" model="item" />
+    }
+</div>
