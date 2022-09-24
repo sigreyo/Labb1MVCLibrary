@@ -12,7 +12,6 @@ namespace Labb1MVC_Simon.Models
         public static async Task<List<Book>> GetBooksFromApi()
         {
             var booklist = new List<Book>();
-
             var client = new HttpClient()
             {
                 BaseAddress = new Uri("https://www.googleapis.com/books/v1/volumes?q=programming&key=AIzaSyAOPSqIffpZusoT1Nl-pt947UStnJHVKzQ&maxResults=40")
@@ -47,10 +46,6 @@ namespace Labb1MVC_Simon.Models
                         Console.WriteLine(e);
                         tempCategoryList.Add("Undefined");
                     }
-
-
-
-
                     tempbook.Author = string.Join(", ", tempAuthorList);
                     tempbook.Category = string.Join(", ", tempCategoryList);
                     tempbook.PageCount = (int)item["pageCount"];

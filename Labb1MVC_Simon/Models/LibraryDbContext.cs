@@ -19,17 +19,18 @@ namespace Labb1MVC_Simon.Models
             var custId = 1;
             var customers = new Faker<Customer>()
                 .RuleFor(x => x.CustomerId, f => custId++)
-                .RuleFor(x => x.FirstName, f => f.Name.FirstName())
-                .RuleFor(x => x.LastName, f => f.Name.LastName())
-                .RuleFor(x => x.Address, f => f.Address.StreetAddress())
+                .RuleFor(x => x.FullName, f => f.Name.FirstName() + " " + f.Name.LastName())
+                .RuleFor(x => x.Address, f => f.Address.StreetName() + " " + f.Random.Int(13,2423))
                 .RuleFor(x => x.Phone, f => f.Phone.PhoneNumberFormat())
-                .RuleFor(x => x.LoanId, f => f.Random.Int(1, 30));
+                .RuleFor(x => x.LoanId, f => f.Random.Int(1, 40))
+                .RuleFor(x=>x.Avatar, f=>f.Internet.Avatar());
+
 
             var loanId = 1;
             var loans = new Faker<Loan>()
                 .RuleFor(x => x.LoanId, f => loanId++)
-                .RuleFor(x => x.CustomerId, f => f.Random.Int(1, 30))
-                .RuleFor(x => x.BookId, f => f.Random.Int(1, 30));
+                .RuleFor(x => x.CustomerId, f => f.Random.Int(1, 40))
+                .RuleFor(x => x.BookId, f => f.Random.Int(1, 40));
 
             var bookId = 1;
             var index = bookId - 1;

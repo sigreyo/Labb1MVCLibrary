@@ -1,0 +1,23 @@
+﻿@model BookListViewModel
+
+
+<div></div>
+<div class="container">
+    <div class="centerbuttons">
+        <div class="welcome">
+            <h2>Welcome to the library</h2>
+        </div>
+        <h5>Shortcuts to action</h5>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <a asp-controller="Library" asp-action="CreateLoan">
+                <button type="button" class="btn btn-dark">Loan a book</button>
+            </a>
+            <a asp-controller="Library" asp-action="CreateCustomer">
+                <button type="button" class="btn btn-dark">Add a customer</button>
+            </a>            
+        </div>
+
+    </div>
+</div>
+
+

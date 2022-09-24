@@ -13,23 +13,25 @@ namespace Labb1MVC_Simon.Models
         [DisplayName("Loaned at")]
         public DateTime BookLoanDate { get; set; } = DateTime.Now;
 
-        [DisplayName("Returned at")]
+        [DisplayName("To be returned at")]
         [DisplayFormat(DataFormatString = "{0:d}")]
         public DateTime? BookReturnDate { get; set; }
 
+        [Required(ErrorMessage = "Value can not be empty.")]
         [DisplayName("Days to loan")]
         public int DaysToLoan { get; set; } = 30;
 
         [DisplayName("Returned in time?")]
         public bool? ReturnedInTime { get; set; }
 
-        [ForeignKey("Loans")]        
+        [ForeignKey("Loans")]
+        [DisplayName("Loaned by")]
         public int CustomerId { get; set; }
         [ForeignKey("Loans")]
         public int BookId { get; set; }
 
-        public Book Book { get; set; }
-        public Customer Customer { get; set; }
+        public Book? Book { get; set; }
+        public Customer? Customer { get; set; }
 
     }
 }

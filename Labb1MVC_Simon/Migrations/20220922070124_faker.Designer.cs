@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Labb1MVC_Simon.Migrations
 {
     [DbContext(typeof(LibraryDbContext))]
-    [Migration("20220920105126_1")]
-    partial class _1
+    [Migration("20220922070124_faker")]
+    partial class faker
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -67,242 +67,242 @@ namespace Labb1MVC_Simon.Migrations
                         new
                         {
                             BookId = 1,
-                            Amount = 4,
-                            LoanId = 40
+                            Amount = 5,
+                            LoanId = 24
                         },
                         new
                         {
                             BookId = 2,
-                            Amount = 5,
-                            LoanId = 15
+                            Amount = 2,
+                            LoanId = 30
                         },
                         new
                         {
                             BookId = 3,
-                            Amount = 5,
-                            LoanId = 14
+                            Amount = 4,
+                            LoanId = 25
                         },
                         new
                         {
                             BookId = 4,
-                            Amount = 5,
-                            LoanId = 6
+                            Amount = 3,
+                            LoanId = 3
                         },
                         new
                         {
                             BookId = 5,
-                            Amount = 3,
-                            LoanId = 12
+                            Amount = 2,
+                            LoanId = 1
                         },
                         new
                         {
                             BookId = 6,
-                            Amount = 2,
-                            LoanId = 39
+                            Amount = 1,
+                            LoanId = 14
                         },
                         new
                         {
                             BookId = 7,
+                            Amount = 4,
+                            LoanId = 35
+                        },
+                        new
+                        {
+                            BookId = 8,
+                            Amount = 4,
+                            LoanId = 5
+                        },
+                        new
+                        {
+                            BookId = 9,
+                            Amount = 1,
+                            LoanId = 10
+                        },
+                        new
+                        {
+                            BookId = 10,
+                            Amount = 5,
+                            LoanId = 25
+                        },
+                        new
+                        {
+                            BookId = 11,
+                            Amount = 5,
+                            LoanId = 8
+                        },
+                        new
+                        {
+                            BookId = 12,
+                            Amount = 3,
+                            LoanId = 29
+                        },
+                        new
+                        {
+                            BookId = 13,
                             Amount = 2,
                             LoanId = 23
                         },
                         new
                         {
-                            BookId = 8,
+                            BookId = 14,
                             Amount = 1,
-                            LoanId = 20
-                        },
-                        new
-                        {
-                            BookId = 9,
-                            Amount = 4,
-                            LoanId = 28
-                        },
-                        new
-                        {
-                            BookId = 10,
-                            Amount = 3,
-                            LoanId = 28
-                        },
-                        new
-                        {
-                            BookId = 11,
-                            Amount = 4,
-                            LoanId = 13
-                        },
-                        new
-                        {
-                            BookId = 12,
-                            Amount = 2,
                             LoanId = 14
                         },
                         new
                         {
-                            BookId = 13,
-                            Amount = 5,
-                            LoanId = 38
-                        },
-                        new
-                        {
-                            BookId = 14,
-                            Amount = 5,
-                            LoanId = 35
-                        },
-                        new
-                        {
                             BookId = 15,
-                            Amount = 2,
-                            LoanId = 12
+                            Amount = 1,
+                            LoanId = 30
                         },
                         new
                         {
                             BookId = 16,
-                            Amount = 3,
-                            LoanId = 15
+                            Amount = 4,
+                            LoanId = 30
                         },
                         new
                         {
                             BookId = 17,
-                            Amount = 4,
-                            LoanId = 38
+                            Amount = 2,
+                            LoanId = 22
                         },
                         new
                         {
                             BookId = 18,
                             Amount = 2,
-                            LoanId = 14
+                            LoanId = 30
                         },
                         new
                         {
                             BookId = 19,
-                            Amount = 4,
+                            Amount = 3,
                             LoanId = 25
                         },
                         new
                         {
                             BookId = 20,
                             Amount = 1,
-                            LoanId = 37
+                            LoanId = 3
                         },
                         new
                         {
                             BookId = 21,
-                            Amount = 2,
-                            LoanId = 17
+                            Amount = 1,
+                            LoanId = 39
                         },
                         new
                         {
                             BookId = 22,
-                            Amount = 1,
-                            LoanId = 2
+                            Amount = 3,
+                            LoanId = 34
                         },
                         new
                         {
                             BookId = 23,
-                            Amount = 2,
-                            LoanId = 1
+                            Amount = 3,
+                            LoanId = 30
                         },
                         new
                         {
                             BookId = 24,
-                            Amount = 3,
-                            LoanId = 36
+                            Amount = 4,
+                            LoanId = 16
                         },
                         new
                         {
                             BookId = 25,
-                            Amount = 1,
-                            LoanId = 4
+                            Amount = 5,
+                            LoanId = 11
                         },
                         new
                         {
                             BookId = 26,
+                            Amount = 2,
+                            LoanId = 16
+                        },
+                        new
+                        {
+                            BookId = 27,
                             Amount = 5,
                             LoanId = 7
                         },
                         new
                         {
-                            BookId = 27,
-                            Amount = 4,
-                            LoanId = 11
-                        },
-                        new
-                        {
                             BookId = 28,
-                            Amount = 5,
-                            LoanId = 15
+                            Amount = 4,
+                            LoanId = 19
                         },
                         new
                         {
                             BookId = 29,
-                            Amount = 3,
-                            LoanId = 21
+                            Amount = 4,
+                            LoanId = 14
                         },
                         new
                         {
                             BookId = 30,
                             Amount = 2,
-                            LoanId = 3
+                            LoanId = 23
                         },
                         new
                         {
                             BookId = 31,
-                            Amount = 1,
-                            LoanId = 11
+                            Amount = 4,
+                            LoanId = 35
                         },
                         new
                         {
                             BookId = 32,
-                            Amount = 4,
-                            LoanId = 22
+                            Amount = 2,
+                            LoanId = 1
                         },
                         new
                         {
                             BookId = 33,
-                            Amount = 2,
-                            LoanId = 33
-                        },
-                        new
-                        {
-                            BookId = 34,
                             Amount = 5,
                             LoanId = 30
                         },
                         new
                         {
+                            BookId = 34,
+                            Amount = 4,
+                            LoanId = 32
+                        },
+                        new
+                        {
                             BookId = 35,
-                            Amount = 2,
+                            Amount = 1,
                             LoanId = 28
                         },
                         new
                         {
                             BookId = 36,
                             Amount = 2,
-                            LoanId = 22
+                            LoanId = 25
                         },
                         new
                         {
                             BookId = 37,
                             Amount = 1,
-                            LoanId = 10
+                            LoanId = 1
                         },
                         new
                         {
                             BookId = 38,
-                            Amount = 3,
-                            LoanId = 5
+                            Amount = 5,
+                            LoanId = 32
                         },
                         new
                         {
                             BookId = 39,
                             Amount = 2,
-                            LoanId = 34
+                            LoanId = 20
                         },
                         new
                         {
                             BookId = 40,
-                            Amount = 2,
-                            LoanId = 37
+                            Amount = 4,
+                            LoanId = 27
                         });
                 });
 
@@ -319,12 +319,7 @@ namespace Labb1MVC_Simon.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasMaxLength(12)
-                        .HasColumnType("nvarchar(12)");
-
-                    b.Property<string>("LastName")
+                    b.Property<string>("FullName")
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
@@ -345,362 +340,322 @@ namespace Labb1MVC_Simon.Migrations
                         new
                         {
                             CustomerId = 1,
-                            Address = "473 Joaquin Streets",
-                            FirstName = "Concepcion",
-                            LastName = "Anderson",
-                            LoanId = 20,
-                            Phone = "420-717-8359"
+                            Address = "Stationsvägen 59",
+                            FullName = "Cassandra Eriksson",
+                            LoanId = 1,
+                            Phone = "5349-36855"
                         },
                         new
                         {
                             CustomerId = 2,
-                            Address = "398 Barney Springs",
-                            FirstName = "Elaina",
-                            LastName = "Tromp",
-                            LoanId = 19,
-                            Phone = "686-450-8914"
+                            Address = "Perssons Gata 9",
+                            FullName = "Isaias Svensson",
+                            LoanId = 27,
+                            Phone = "7450-63806"
                         },
                         new
                         {
                             CustomerId = 3,
-                            Address = "68126 Pacocha Harbors",
-                            FirstName = "Annetta",
-                            LastName = "Durgan",
-                            LoanId = 5,
-                            Phone = "720-663-8296"
+                            Address = "Amaris Gata 354",
+                            FullName = "Michale Johansson",
+                            LoanId = 15,
+                            Phone = "0636-89706"
                         },
                         new
                         {
                             CustomerId = 4,
-                            Address = "69611 Quinn Roads",
-                            FirstName = "Maxie",
-                            LastName = "Hackett",
-                            LoanId = 27,
-                            Phone = "621-488-6236"
+                            Address = "Lindseys Väg 288",
+                            FullName = "Darrion Johansson",
+                            LoanId = 3,
+                            Phone = "5007-94836"
                         },
                         new
                         {
                             CustomerId = 5,
-                            Address = "93583 Jenkins Motorway",
-                            FirstName = "Genesis",
-                            LastName = "O'Hara",
-                            LoanId = 28,
-                            Phone = "394-444-0789"
+                            Address = "Florines Väg 0",
+                            FullName = "Heather Eriksson",
+                            LoanId = 10,
+                            Phone = "4644-68688"
                         },
                         new
                         {
                             CustomerId = 6,
-                            Address = "297 Kellen Fall",
-                            FirstName = "Aidan",
-                            LastName = "Stehr",
-                            LoanId = 23,
-                            Phone = "520-384-1295"
+                            Address = "Kyrkovägen 83",
+                            FullName = "Javon Andersson",
+                            LoanId = 28,
+                            Phone = "6235-38112"
                         },
                         new
                         {
                             CustomerId = 7,
-                            Address = "125 Schuppe Drives",
-                            FirstName = "Axel",
-                            LastName = "Spencer",
-                            LoanId = 29,
-                            Phone = "869-451-8650"
+                            Address = "Olssons Gata 6",
+                            FullName = "Mavis Nilsson",
+                            LoanId = 10,
+                            Phone = "6763-28540"
                         },
                         new
                         {
                             CustomerId = 8,
-                            Address = "54328 Trinity Shore",
-                            FirstName = "Raymond",
-                            LastName = "Schmitt",
-                            LoanId = 25,
-                            Phone = "914-724-8624"
+                            Address = "Devens Väg 693",
+                            FullName = "Diana Nilsson",
+                            LoanId = 22,
+                            Phone = "6063-10119"
                         },
                         new
                         {
                             CustomerId = 9,
-                            Address = "542 Bogisich Park",
-                            FirstName = "Justice",
-                            LastName = "Daniel",
-                            LoanId = 28,
-                            Phone = "648-565-3794"
+                            Address = "Åkerallén 47",
+                            FullName = "Pattie Persson",
+                            LoanId = 3,
+                            Phone = "3089-36342"
                         },
                         new
                         {
                             CustomerId = 10,
-                            Address = "8319 Rutherford Highway",
-                            FirstName = "Torey",
-                            LastName = "Grant",
+                            Address = "Kyrkgärdet 2",
+                            FullName = "Jayde Karlsson",
                             LoanId = 29,
-                            Phone = "559-325-7840"
+                            Phone = "1561-46424"
                         },
                         new
                         {
                             CustomerId = 11,
-                            Address = "502 Harber Manor",
-                            FirstName = "Antonietta",
-                            LastName = "Pagac",
-                            LoanId = 14,
-                            Phone = "828-607-2656"
+                            Address = "Vicentas Gata 94",
+                            FullName = "Tessie Olsson",
+                            LoanId = 18,
+                            Phone = "3522-99176"
                         },
                         new
                         {
                             CustomerId = 12,
-                            Address = "0011 Ankunding Drive",
-                            FirstName = "Fritz",
-                            LastName = "Torphy",
-                            LoanId = 5,
-                            Phone = "580-831-2309"
+                            Address = "Övre Skolvägen 776",
+                            FullName = "Neha Olsson",
+                            LoanId = 11,
+                            Phone = "7963-53685"
                         },
                         new
                         {
                             CustomerId = 13,
-                            Address = "34727 Logan Vista",
-                            FirstName = "Joshua",
-                            LastName = "Spencer",
-                            LoanId = 15,
-                            Phone = "894-597-5796"
+                            Address = "Strandallén 0",
+                            FullName = "Ephraim Persson",
+                            LoanId = 34,
+                            Phone = "1222-38751"
                         },
                         new
                         {
                             CustomerId = 14,
-                            Address = "896 Parker Drive",
-                            FirstName = "Frederik",
-                            LastName = "Bosco",
-                            LoanId = 25,
-                            Phone = "872-501-1084"
+                            Address = "Nonas Väg 6",
+                            FullName = "Wilford Persson",
+                            LoanId = 17,
+                            Phone = "9516-41014"
                         },
                         new
                         {
                             CustomerId = 15,
-                            Address = "7107 Mayra Alley",
-                            FirstName = "Shaylee",
-                            LastName = "Deckow",
-                            LoanId = 26,
-                            Phone = "918-797-3598"
+                            Address = "Strandgatan 6",
+                            FullName = "Destiny Larsson",
+                            LoanId = 14,
+                            Phone = "3503-63930"
                         },
                         new
                         {
                             CustomerId = 16,
-                            Address = "08027 Freida Route",
-                            FirstName = "Elnora",
-                            LastName = "Rogahn",
-                            LoanId = 7,
-                            Phone = "376-489-6738"
+                            Address = "Novas Gata 6",
+                            FullName = "Reese Karlsson",
+                            LoanId = 36,
+                            Phone = "5388-61201"
                         },
                         new
                         {
                             CustomerId = 17,
-                            Address = "73686 Bode Ports",
-                            FirstName = "Joey",
-                            LastName = "Halvorson",
-                            LoanId = 28,
-                            Phone = "966-945-4655"
+                            Address = "Londons Väg 7",
+                            FullName = "Karlee Persson",
+                            LoanId = 39,
+                            Phone = "0822-93859"
                         },
                         new
                         {
                             CustomerId = 18,
-                            Address = "173 Erica Ports",
-                            FirstName = "Howell",
-                            LastName = "Mosciski",
-                            LoanId = 5,
-                            Phone = "367-995-5884"
+                            Address = "Östra Ängsgränden 549",
+                            FullName = "Emmanuel Persson",
+                            LoanId = 33,
+                            Phone = "2920-13445"
                         },
                         new
                         {
                             CustomerId = 19,
-                            Address = "7837 Wanda Shore",
-                            FirstName = "Dan",
-                            LastName = "Murphy",
-                            LoanId = 5,
-                            Phone = "394-486-5439"
+                            Address = "Östra Villagränden 834",
+                            FullName = "Murl Karlsson",
+                            LoanId = 14,
+                            Phone = "5758-14266"
                         },
                         new
                         {
                             CustomerId = 20,
-                            Address = "9190 Telly Harbors",
-                            FirstName = "Howard",
-                            LastName = "Crist",
-                            LoanId = 4,
-                            Phone = "350-978-2883"
+                            Address = "Ängsvägen 91",
+                            FullName = "Aryanna Svensson",
+                            LoanId = 19,
+                            Phone = "9606-96282"
                         },
                         new
                         {
                             CustomerId = 21,
-                            Address = "1088 Kertzmann Key",
-                            FirstName = "Yvonne",
-                            LastName = "Breitenberg",
-                            LoanId = 29,
-                            Phone = "975-756-2243"
+                            Address = "Skolgatan 33",
+                            FullName = "Lynn Karlsson",
+                            LoanId = 3,
+                            Phone = "9978-30951"
                         },
                         new
                         {
                             CustomerId = 22,
-                            Address = "9220 Lucinda Branch",
-                            FirstName = "Kenna",
-                            LastName = "Dooley",
-                            LoanId = 25,
-                            Phone = "917-372-5009"
+                            Address = "Östra Åkergränden 4",
+                            FullName = "Zackary Olsson",
+                            LoanId = 35,
+                            Phone = "5812-52309"
                         },
                         new
                         {
                             CustomerId = 23,
-                            Address = "06056 Emmalee Manors",
-                            FirstName = "Erin",
-                            LastName = "Mayert",
-                            LoanId = 25,
-                            Phone = "354-439-7542"
+                            Address = "Stationsallén 75",
+                            FullName = "Wilburn Andersson",
+                            LoanId = 39,
+                            Phone = "4302-06791"
                         },
                         new
                         {
                             CustomerId = 24,
-                            Address = "8282 Turcotte Canyon",
-                            FirstName = "Barney",
-                            LastName = "McGlynn",
-                            LoanId = 28,
-                            Phone = "602-600-1262"
+                            Address = "Larssons Gata 894",
+                            FullName = "Violette Andersson",
+                            LoanId = 39,
+                            Phone = "7175-23025"
                         },
                         new
                         {
                             CustomerId = 25,
-                            Address = "90548 Frami Ports",
-                            FirstName = "Junior",
-                            LastName = "Schulist",
-                            LoanId = 20,
-                            Phone = "836-645-7081"
+                            Address = "Ringgränden 6",
+                            FullName = "Garfield Gustafsson",
+                            LoanId = 4,
+                            Phone = "9905-35222"
                         },
                         new
                         {
                             CustomerId = 26,
-                            Address = "5434 Beatty Lights",
-                            FirstName = "Gaylord",
-                            LastName = "Schowalter",
-                            LoanId = 13,
-                            Phone = "562-588-5384"
+                            Address = "Gengärdet 830",
+                            FullName = "Rosamond Johansson",
+                            LoanId = 8,
+                            Phone = "8073-20980"
                         },
                         new
                         {
                             CustomerId = 27,
-                            Address = "3792 Gaylord Islands",
-                            FirstName = "Noah",
-                            LastName = "Kuphal",
-                            LoanId = 2,
-                            Phone = "392-970-4682"
+                            Address = "Bäckallén 137",
+                            FullName = "Mckenzie Andersson",
+                            LoanId = 19,
+                            Phone = "7186-04385"
                         },
                         new
                         {
                             CustomerId = 28,
-                            Address = "9004 Lilyan Prairie",
-                            FirstName = "Catherine",
-                            LastName = "Grady",
-                            LoanId = 25,
-                            Phone = "685-713-9585"
+                            Address = "Skogsgärdet 694",
+                            FullName = "Jennyfer Larsson",
+                            LoanId = 14,
+                            Phone = "1836-84244"
                         },
                         new
                         {
                             CustomerId = 29,
-                            Address = "54872 Justine Rapids",
-                            FirstName = "Kennedi",
-                            LastName = "Torphy",
+                            Address = "Rays Väg 0",
+                            FullName = "Aida Persson",
                             LoanId = 18,
-                            Phone = "331-244-9496"
+                            Phone = "7646-51098"
                         },
                         new
                         {
                             CustomerId = 30,
-                            Address = "29361 Senger Spring",
-                            FirstName = "Alvis",
-                            LastName = "Stoltenberg",
-                            LoanId = 14,
-                            Phone = "531-210-0539"
+                            Address = "Övre Ringgränden 1",
+                            FullName = "Levi Olsson",
+                            LoanId = 25,
+                            Phone = "6268-24169"
                         },
                         new
                         {
                             CustomerId = 31,
-                            Address = "42489 Angelica Plain",
-                            FirstName = "Alene",
-                            LastName = "Bednar",
-                            LoanId = 16,
-                            Phone = "274-395-7192"
+                            Address = "Ulisess Väg 12",
+                            FullName = "Elise Larsson",
+                            LoanId = 7,
+                            Phone = "9444-59163"
                         },
                         new
                         {
                             CustomerId = 32,
-                            Address = "6074 Justina Streets",
-                            FirstName = "Nicolette",
-                            LastName = "Daniel",
-                            LoanId = 12,
-                            Phone = "820-807-8182"
+                            Address = "Perssons Gata 6",
+                            FullName = "Marion Svensson",
+                            LoanId = 32,
+                            Phone = "6702-67331"
                         },
                         new
                         {
                             CustomerId = 33,
-                            Address = "456 Brekke Burgs",
-                            FirstName = "Amber",
-                            LastName = "Dach",
-                            LoanId = 25,
-                            Phone = "503-588-7785"
+                            Address = "Västra Furugatan 0",
+                            FullName = "Brianne Olsson",
+                            LoanId = 32,
+                            Phone = "0428-09779"
                         },
                         new
                         {
                             CustomerId = 34,
-                            Address = "3225 Myriam Locks",
-                            FirstName = "Myrtice",
-                            LastName = "O'Kon",
-                            LoanId = 4,
-                            Phone = "947-334-7958"
+                            Address = "Camerons Väg 604",
+                            FullName = "Jordyn Olsson",
+                            LoanId = 16,
+                            Phone = "8907-71979"
                         },
                         new
                         {
                             CustomerId = 35,
-                            Address = "590 Carlotta Dale",
-                            FirstName = "Celestino",
-                            LastName = "Runolfsson",
-                            LoanId = 16,
-                            Phone = "601-335-0189"
+                            Address = "Frederiks Gata 94",
+                            FullName = "Keshawn Nilsson",
+                            LoanId = 25,
+                            Phone = "2194-78514"
                         },
                         new
                         {
                             CustomerId = 36,
-                            Address = "77581 Adell Greens",
-                            FirstName = "Noah",
-                            LastName = "Kiehn",
-                            LoanId = 23,
-                            Phone = "840-526-3399"
+                            Address = "Gustafssons Gata 167",
+                            FullName = "Jude Gustafsson",
+                            LoanId = 36,
+                            Phone = "6275-80126"
                         },
                         new
                         {
                             CustomerId = 37,
-                            Address = "191 Wilber Village",
-                            FirstName = "Raina",
-                            LastName = "Gulgowski",
-                            LoanId = 27,
-                            Phone = "500-730-7897"
+                            Address = "Kyrkogränden 9",
+                            FullName = "Danyka Karlsson",
+                            LoanId = 12,
+                            Phone = "6610-59121"
                         },
                         new
                         {
                             CustomerId = 38,
-                            Address = "230 Rempel Burg",
-                            FirstName = "Shana",
-                            LastName = "Kuhlman",
-                            LoanId = 10,
-                            Phone = "922-752-8616"
+                            Address = "Genevieves Gata 402",
+                            FullName = "Uriel Persson",
+                            LoanId = 30,
+                            Phone = "9659-23743"
                         },
                         new
                         {
                             CustomerId = 39,
-                            Address = "090 Boris Throughway",
-                            FirstName = "Estrella",
-                            LastName = "Quigley",
+                            Address = "Pamelas Gata 65",
+                            FullName = "Casimir Karlsson",
                             LoanId = 13,
-                            Phone = "518-435-1502"
+                            Phone = "6406-91738"
                         },
                         new
                         {
                             CustomerId = 40,
-                            Address = "3855 Desiree Lodge",
-                            FirstName = "Afton",
-                            LastName = "Cronin",
-                            LoanId = 16,
-                            Phone = "944-690-9246"
+                            Address = "Svenssons Väg 97",
+                            FullName = "Alene Johansson",
+                            LoanId = 6,
+                            Phone = "3133-78695"
                         });
                 });
 
@@ -742,321 +697,321 @@ namespace Labb1MVC_Simon.Migrations
                         new
                         {
                             LoanId = 1,
-                            BookId = 17,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6304),
-                            CustomerId = 8,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 2,
-                            BookId = 14,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6660),
-                            CustomerId = 16,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 3,
                             BookId = 24,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6698),
-                            CustomerId = 14,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 4,
-                            BookId = 2,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6704),
-                            CustomerId = 8,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 5,
-                            BookId = 16,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6709),
-                            CustomerId = 27,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 6,
-                            BookId = 26,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6714),
-                            CustomerId = 23,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 7,
-                            BookId = 7,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6719),
-                            CustomerId = 18,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 8,
-                            BookId = 21,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6724),
-                            CustomerId = 28,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 9,
-                            BookId = 19,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6730),
-                            CustomerId = 26,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 10,
-                            BookId = 9,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6734),
-                            CustomerId = 17,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 11,
-                            BookId = 13,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6740),
-                            CustomerId = 13,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 12,
-                            BookId = 22,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6745),
-                            CustomerId = 26,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 13,
-                            BookId = 13,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6750),
-                            CustomerId = 30,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 14,
-                            BookId = 3,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6755),
-                            CustomerId = 19,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 15,
-                            BookId = 19,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6760),
-                            CustomerId = 11,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 16,
-                            BookId = 15,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6765),
-                            CustomerId = 19,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 17,
-                            BookId = 26,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6770),
-                            CustomerId = 21,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 18,
-                            BookId = 25,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6775),
-                            CustomerId = 24,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 19,
-                            BookId = 27,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6779),
-                            CustomerId = 17,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 20,
-                            BookId = 16,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6784),
-                            CustomerId = 6,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 21,
-                            BookId = 15,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6789),
-                            CustomerId = 1,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 22,
-                            BookId = 25,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6794),
-                            CustomerId = 13,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 23,
-                            BookId = 22,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6799),
-                            CustomerId = 10,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 24,
-                            BookId = 12,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6804),
-                            CustomerId = 23,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 25,
-                            BookId = 5,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6809),
-                            CustomerId = 13,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 26,
-                            BookId = 3,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6868),
-                            CustomerId = 24,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 27,
-                            BookId = 23,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6873),
-                            CustomerId = 22,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 28,
-                            BookId = 8,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6878),
-                            CustomerId = 1,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 29,
-                            BookId = 26,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6883),
-                            CustomerId = 20,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 30,
-                            BookId = 18,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6888),
-                            CustomerId = 26,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 31,
-                            BookId = 13,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6893),
-                            CustomerId = 29,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 32,
-                            BookId = 29,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6898),
-                            CustomerId = 20,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 33,
-                            BookId = 29,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6903),
-                            CustomerId = 7,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 34,
-                            BookId = 18,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6908),
-                            CustomerId = 2,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 35,
-                            BookId = 12,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6913),
-                            CustomerId = 15,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 36,
-                            BookId = 13,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6918),
-                            CustomerId = 19,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 37,
-                            BookId = 14,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6923),
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(5950),
                             CustomerId = 4,
                             DaysToLoan = 30
                         },
                         new
                         {
-                            LoanId = 38,
-                            BookId = 7,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6928),
-                            CustomerId = 6,
-                            DaysToLoan = 30
-                        },
-                        new
-                        {
-                            LoanId = 39,
-                            BookId = 19,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6933),
+                            LoanId = 2,
+                            BookId = 40,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6359),
                             CustomerId = 3,
                             DaysToLoan = 30
                         },
                         new
                         {
-                            LoanId = 40,
+                            LoanId = 3,
+                            BookId = 2,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6370),
+                            CustomerId = 34,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 4,
+                            BookId = 22,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6377),
+                            CustomerId = 29,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 5,
+                            BookId = 6,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6382),
+                            CustomerId = 17,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 6,
                             BookId = 21,
-                            BookLoanDate = new DateTime(2022, 9, 20, 12, 51, 26, 250, DateTimeKind.Local).AddTicks(6938),
-                            CustomerId = 1,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6387),
+                            CustomerId = 17,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 7,
+                            BookId = 23,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6393),
+                            CustomerId = 22,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 8,
+                            BookId = 18,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6398),
+                            CustomerId = 7,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 9,
+                            BookId = 27,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6403),
+                            CustomerId = 22,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 10,
+                            BookId = 30,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6408),
+                            CustomerId = 18,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 11,
+                            BookId = 22,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6414),
+                            CustomerId = 38,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 12,
+                            BookId = 29,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6419),
+                            CustomerId = 12,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 13,
+                            BookId = 17,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6424),
+                            CustomerId = 39,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 14,
+                            BookId = 1,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6472),
+                            CustomerId = 29,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 15,
+                            BookId = 25,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6478),
+                            CustomerId = 2,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 16,
+                            BookId = 7,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6483),
+                            CustomerId = 34,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 17,
+                            BookId = 19,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6488),
+                            CustomerId = 10,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 18,
+                            BookId = 3,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6493),
+                            CustomerId = 13,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 19,
+                            BookId = 6,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6498),
+                            CustomerId = 27,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 20,
+                            BookId = 37,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6504),
+                            CustomerId = 28,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 21,
+                            BookId = 37,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6509),
+                            CustomerId = 32,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 22,
+                            BookId = 6,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6514),
+                            CustomerId = 21,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 23,
+                            BookId = 24,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6519),
+                            CustomerId = 32,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 24,
+                            BookId = 32,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6524),
+                            CustomerId = 16,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 25,
+                            BookId = 31,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6530),
+                            CustomerId = 21,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 26,
+                            BookId = 10,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6535),
+                            CustomerId = 5,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 27,
+                            BookId = 11,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6540),
+                            CustomerId = 13,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 28,
+                            BookId = 23,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6545),
+                            CustomerId = 8,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 29,
+                            BookId = 27,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6550),
+                            CustomerId = 9,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 30,
+                            BookId = 34,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6555),
+                            CustomerId = 29,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 31,
+                            BookId = 3,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6561),
+                            CustomerId = 18,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 32,
+                            BookId = 1,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6566),
+                            CustomerId = 2,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 33,
+                            BookId = 7,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6571),
+                            CustomerId = 15,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 34,
+                            BookId = 28,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6576),
+                            CustomerId = 40,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 35,
+                            BookId = 17,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6581),
+                            CustomerId = 4,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 36,
+                            BookId = 16,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6586),
+                            CustomerId = 17,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 37,
+                            BookId = 17,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6592),
+                            CustomerId = 12,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 38,
+                            BookId = 11,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6597),
+                            CustomerId = 40,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 39,
+                            BookId = 11,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6602),
+                            CustomerId = 34,
+                            DaysToLoan = 30
+                        },
+                        new
+                        {
+                            LoanId = 40,
+                            BookId = 5,
+                            BookLoanDate = new DateTime(2022, 9, 22, 9, 1, 24, 155, DateTimeKind.Local).AddTicks(6606),
+                            CustomerId = 3,
                             DaysToLoan = 30
                         });
                 });

@@ -1,0 +1,38 @@
+﻿@model Book
+@{
+    string concDescription = Model.Description.Length >= 300 ? Model.Description.Substring(0, 299) + "..." : Model.Description;
+
+}
+<div class="movie-card">
+    <div class="container">
+        <div class="container-bookdetails">
+
+            <img src="@Model.Thumbnail" class="cover" />
+
+            <div class="hero">
+                <div class="details">
+                    <div class="title1">
+                        <h2>@Model.Title</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <div class="column1">
+                    <span class="tag">@Model.Category</span>
+                    <p>Books left: <strong>@Model.Amount</p>
+                    
+                </div> <!-- end column1 -->
+
+                <div class="column2">
+                    <p>@concDescription</p>
+                </div> <!-- end avatars -->
+
+
+
+            </div> <!-- end column2 -->
+        </div>
+    </div><!-- end description -->
+
+
+</div> <!-- end container -->
+</div> <!-- end movie-card -->

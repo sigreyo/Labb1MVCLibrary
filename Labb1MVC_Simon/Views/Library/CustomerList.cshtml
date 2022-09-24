@@ -1,54 +1,61 @@
-﻿@model IEnumerable<Loan>
+﻿@model IEnumerable<Customer>
 
 @{
     ViewData["Title"] = "CustomerList";
 }
 
-<h1>List of customers</h1>
+<h2>Customers</h2>
 
-<p>
-    <a asp-action="CreateCustomer">Create New</a>
-</p>
-<table class="table">
+<table id="table"
+       data-search="true"
+       data-show-columns="true"
+       data-show-multi-sort="true">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Customer.FirstName)
+            <th data-field="customerid" data-sortable="true">
+                @Html.DisplayNameFor(model => model.CustomerId)
+            </th>
+            <th data-field="fullname" data-sortable="true">
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>            
+            <th data-field="address">
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th data-field="phone">
+                @Html.DisplayNameFor(model => model.Phone)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Customer.LastName)
+                Actions
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Customer.Address)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Customer.Phone)
-            </th>
-            
-            <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Customer.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Customer.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Customer.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Customer.Phone)
-            </td>            
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CustomerId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CustomerId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CustomerId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                    <button class="btn btn-warning" asp-action="CustomerDetails" asp-route-id="@item.CustomerId">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <a asp-action="DeleteCustomer" asp-route-id="@item.CustomerId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+
+

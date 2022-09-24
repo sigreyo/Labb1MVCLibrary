@@ -1,18 +1,272 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.centerbuttons {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #3b3c3d;
+    border-color: #212529;
+    border-radius: 1rem;
+}
+
+.welcome h2 {
+    padding: 3rem 0;
+}
+
+.btn-primary {
+    margin: 1rem;
+}
+
+.table-image td, th {
+    vertical-align: middle;
+}
+
+.profile-body {
+    margin: 25px;
+}
+
+.profile {
+    margin-top: -45px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: #ddd;
+    padding: 20px;
+    z-index: 0;
+}
+
+.socialmedia {
+    text-align: center;
+}
+
+.photo {
+    margin: 25px;
+}
+
+.image--cover {
+    width: 170px;
+    height: 170px;
+    border: #fff 3px solid;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: -40px;
+}
+
+.username,
+.profession,
+.locationname,
+.descricao {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 1px;
+}
+
+.username {
+    font-size: 20pt;
+    margin: 2px
+}
+
+.profession {
+    font-size: 14pt;
+}
+
+.locationname {
+    font-size: 14pt;
+    margin: 2px
+}
+
+.descricao {
+    border-top: #969696 solid 1px;
+    padding: 10px;
+    font-size: 11pt;
+    margin: 5px;
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
+
+.movie-card {
+    font: 14px/22px "Lato", Arial, sans-serif;
+    color: #A9A8A3;
+    padding: 40px 0;
+}
+
+.container-bookdetails {
+    margin: 0 auto;
+    width: 780px;
+    height: 640px;
+    background: #F0F0ED;
+    border-radius: 5px;
+    position: relative;
+}
+
+.hero {
+    height: 342px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+    .hero:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        background: red;
+        background: #fff;
+        z-index: -1;
+        transform: skewY(-2.2deg);
+        transform-origin: 0 0;
+    }
+
+.cover {
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    z-index: 2;
+}
+
+.details {
+    padding: 250px 0 0 280px;
+    
+
+{
+    color: white;
+    font-size: 44px;
+    margin-bottom: 13px;
+    position: relative;
+    span
+
+{
+    position: absolute;
+    top: 3px;
+    margin-left: 12px;
+    background: #C4AF3D;
+    border-radius: 5px;
+    color: #544C21;
+    font-size: 14px;
+    padding: 0px 4px;
+}
+
+}
+
+.title2 {
+    color: #C7C1BA;
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+
+}
+
+.description {
+    bottom: 0px;
+    height: 200px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #B1B0AC;
+}
+
+.column1 {
+
+    padding-top: 40px;
+    width: 220px;
+    float: left;
+    text-align: center;
+}
+.column1 p{
+    padding-top: 20px;
+    color: black;
+}
+
+.tag {
+    background: white;
+    border-radius: 10px;
+    padding: 3px 8px;
+    font-size: 14px;
+    margin-right: 4px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+    .tag:hover {
+        background: #ddd;
+    }
+
+.column2 {
+    padding-left: 41px;
+    padding-top: 30px;
+    margin-left: 20px;
+    width: 480px;
+    float: left;
+}
+.column2 p{
+    color: black;
+}
+
+.avatars {
+    margin-top: 23px;
+    img
+
+}
+
+img:hover {
+    opacity: 0.6;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.text-center a{
+    color: white;
+}
+.text-center button:hover{
+    transition: transform 0.2s;
+    transform: scale(1.1);
+    
+    
 }

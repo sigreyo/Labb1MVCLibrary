@@ -5,6 +5,6 @@ namespace Labb1MVC_Simon.ViewModels
 {
     public class BookListViewModel
     {        
-        public List<Book> Books { get; set; }        
+        public IEnumerable<Book> Books { get; set; }        
     }
 }

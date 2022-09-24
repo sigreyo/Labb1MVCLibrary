@@ -1,0 +1,100 @@
+﻿@model IEnumerable<Loan>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Loans</h2>
+
+
+<table class="table"
+       data-search="true"
+       data-show-columns="true"
+       data-show-multi-sort="true">
+    <thead>
+        <tr>            
+            <th data-field="title" data-sortable="true">
+                @Html.DisplayNameFor(x=>x.Book.Title)
+            </th>
+            <th data-field="customerid" data-sortable="true">
+                Loaned by
+            </th>
+            <th>
+                @Html.DisplayNameFor(x=>x.BookLoanDate)
+            </th>
+            <th>
+                To be returned at
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>                
+                <td>
+                    @Html.DisplayFor(x => item.Book.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => item.Customer.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => item.BookLoanDate)
+
+                </td>
+                <td>
+                    @Html.DisplayFor(x => item.BookReturnDate)
+                </td>
+                <td id="@item.LoanId">               
+                    <button class="btn btn-outline-danger" id="deletebtn">Return</button>                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="modal fade" id="showmodal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        $(".table").on("click", "#deletebtn", function () {
+            var id = $(this).closest("tr").find("td").eq(4).attr("id")          
+            $.ajax({
+                url: "@Url.Action("DeleteLoan", "Library")",
+                data: { id: id },
+                success: function (data) {
+                    $("#showmodal .modal-dialog").html(data)
+                    $("#showmodal").modal("show")
+                }
+            })
+        })
+    </script>
+}    
+
+@* <div class="btn-group dropend">
+                <a asp-action="DeleteLoan" asp-route-id="@item.LoanId">delete</a>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-flag-checkered"></i>
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" asp-action="DeleteLoan" asp-route-id="@item.LoanId">
+                <a asp-action="DeleteLoan" asp-route-id="@item.LoanId"></a>
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item">Are you sure you want to end loan?</a></li>
+                <li><hr class="dropdown-divider"></li>
+
+                <li class="text-center">
+
+                <a class="dropdown-item">
+
+                <button type="button" class="btn btn-success"><i class="fa-solid fa-circle-check"></i></button>
+
+                <button type="button" class="btn btn-danger"><i class="fa-solid fa-circle-xmark"></i></button>
+                </a>
+                </li>
+                </ul>
+                </div>*@

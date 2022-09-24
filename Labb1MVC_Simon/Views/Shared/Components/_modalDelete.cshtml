@@ -1,0 +1,32 @@
+﻿@model Loan
+
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">Are you sure you want to return this book?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="@Model.Book.Thumbnail" />
+            </div>
+            <div class="col-sm-6">
+                <h6>@Model.Book.Title</h6><br />
+                <small class="text-muted">by:</small>
+                <h7>@Model.Book.Author</h7>
+            </div>
+            
+        </div>
+    </div>
+    <div class="modal-footer">
+        <form asp-action="DeleteConfirmed" asp-route-id="@Model.LoanId">
+            <input type="hidden" asp-for="@Model.LoanId" />
+        <button type="submit" class="btn btn-success"><i class="fa-solid fa-circle-check"></i>
+        </button>
+        </form>
+
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-circle-xmark"></i></button>
+
+    </div>
+</div>
+
