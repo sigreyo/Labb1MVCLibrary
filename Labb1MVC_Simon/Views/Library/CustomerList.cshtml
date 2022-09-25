@@ -12,9 +12,6 @@
        data-show-multi-sort="true">
     <thead>
         <tr>
-            <th data-field="customerid" data-sortable="true">
-                @Html.DisplayNameFor(model => model.CustomerId)
-            </th>
             <th data-field="fullname" data-sortable="true">
                 @Html.DisplayNameFor(model => model.FullName)
             </th>
@@ -34,9 +31,6 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.CustomerId)
-                </td>
-                <td>
                     @Html.DisplayFor(modelItem => item.FullName)
                 </td>
 
@@ -47,7 +41,8 @@
                     @Html.DisplayFor(modelItem => item.Phone)
                 </td>
                 <td id="@item.CustomerId">
-                    <button class="btn btn-warning" id="editbtn"><i class="fa-solid fa-circle-info"></i></button>
+                    <button class="btn btn-info" id="infobtn"><i class="fa-solid fa-circle-info"></i></button>
+                    <button class="btn btn-warning" id="editbtn"><i class="fa-solid fa-pen"></i></button>
                     <button class="btn btn-danger" id="deletebtn"><i class="fa-solid fa-trash"></i></button>
                 </td>
             </tr>
@@ -55,13 +50,13 @@
     </tbody>
 </table>
 <div class="modal fade" id="showmodal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog" style="max-width:max-content;">
     </div>
 </div>
 @section scripts{
     <script>
         $(".table").on("click", "#deletebtn", function () {
-            var id = $(this).closest("tr").find("td").eq(4).attr("id")
+            var id = $(this).closest("tr").find("td").eq(3).attr("id")
             $.ajax({
                 url: "@Url.Action("DeleteCustomer", "Library")",
                 data: { id: id },
@@ -73,9 +68,21 @@
         })
 
         $(".table").on("click", "#editbtn", function () {
-            var id = $(this).closest("tr").find("td").eq(4).attr("id")
+            var id = $(this).closest("tr").find("td").eq(3).attr("id")
             $.ajax({
                 url: "@Url.Action("EditCustomer", "Library")",
+                data: { id: id },
+                success: function (data) {
+                    $("#showmodal .modal-dialog").html(data)
+                    $("#showmodal").modal("show")
+                }
+            })
+        })
+
+        $(".table").on("click", "#infobtn", function () {
+            var id = $(this).closest("tr").find("td").eq(3).attr("id")
+            $.ajax({
+                url: "@Url.Action("CustomerDetails", "Library")",
                 data: { id: id },
                 success: function (data) {
                     $("#showmodal .modal-dialog").html(data)

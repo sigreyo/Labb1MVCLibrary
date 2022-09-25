@@ -1,0 +1,52 @@
+﻿@model CustomerDetailsViewModel
+
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">@Model.Customer.FullName's information</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <div class="modal-body">
+        <div class="profile-body">
+            <div class="photo">
+                <img src="@Model.Customer.Avatar"
+                     class="image--cover">
+            </div>
+            <div class="profile">
+                <h1 class="username">@Model.Customer.FullName</h1>
+                <h2 class="profession"><i class="fa-solid fa-phone"></i>  <a href="tel:+@Model.Customer.Phone">@Model.Customer.Phone</a> </h2>
+                <h3 class="locationname"><i class="fas fa-map-marker-alt"></i>  @Model.Customer.Address </h3>
+                <div class="col-12">
+                    <table class="table table-image">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Author</th>
+                                <th scope="col">Loaned at</th>
+                                <th scope="col">To be returned at</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.LoansWithBooks.Where(x => x.CustomerId == Model.Customer.CustomerId))
+                            {
+                                <h6></h6>
+                                <tr>
+                                    <td class="w-25">
+                                        <img src="@item.Book.Thumbnail">
+                                    </td>
+                                    <td>@item.Book.Title</td>
+                                    <td>@item.Book.Author</td>
+                                    <td>@item.BookLoanDate</td>
+                                    <td>@item.BookReturnDate</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">        
+        <button id="deletesuccess" type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-circle-xmark"></i></button>
+    </div>
+</div>

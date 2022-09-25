@@ -66,7 +66,7 @@ namespace Labb1MVC_Simon.Controllers
                 return NotFound();
             }
 
-            return View(new CustomerDetailsViewModel { LoansWithBooks = _context.Loans.Include(x => x.Book).ToList(), Customer = cust });
+            return PartialView("components//_modalInfo", new CustomerDetailsViewModel { LoansWithBooks = _context.Loans.Include(x => x.Book).ToList(), Customer = cust });
         }
 
         //GET: Library/BookDetails/4
