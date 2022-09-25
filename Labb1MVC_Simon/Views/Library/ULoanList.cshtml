@@ -10,7 +10,7 @@
        data-show-columns="true"
        data-show-multi-sort="true">
     <thead>
-        <tr>            
+        <tr>
             <th data-field="title" data-sortable="true">
                 @Html.DisplayNameFor(x=>x.Book.Title)
             </th>
@@ -31,7 +31,7 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>                
+            <tr>
                 <td>
                     @Html.DisplayFor(x => item.Book.Title)
                 </td>
@@ -45,8 +45,8 @@
                 <td>
                     @Html.DisplayFor(x => item.BookReturnDate)
                 </td>
-                <td id="@item.LoanId">               
-                    <button class="btn btn-outline-danger" id="deletebtn">Return</button>                    
+                <td id="@item.LoanId">
+                    <button class="btn btn-outline-danger" id="deletebtn">Return</button>
                 </td>
             </tr>
         }
@@ -54,14 +54,13 @@
 </table>
 <div class="modal fade" id="showmodal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
-
     </div>
 </div>
 
 @section scripts{
     <script>
         $(".table").on("click", "#deletebtn", function () {
-            var id = $(this).closest("tr").find("td").eq(4).attr("id")          
+            var id = $(this).closest("tr").find("td").eq(4).attr("id")
             $.ajax({
                 url: "@Url.Action("DeleteLoan", "Library")",
                 data: { id: id },
@@ -71,6 +70,20 @@
                 }
             })
         })
+
+        $(document).ready(function () {
+
+            $.toast({
+                heading: 'Success!',
+                text: 'Loan was deleted.',
+                position: 'top-center',
+                stack: false,
+                bgColor: '#53c320',
+
+            })
+
+        })
+
     </script>
 }
 

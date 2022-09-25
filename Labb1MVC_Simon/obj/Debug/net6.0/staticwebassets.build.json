@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2gS8d3BTua6i6kxzaQaQ//aYKg8WftOk082mJW1Nc1U=",
+  "Hash": "LQfb0+Svb9r0JCT5ppTgR+TZvyjUjTeIPlftJAMcFKM=",
   "Source": "Labb1MVC_Simon",
   "BasePath": "_content/Labb1MVC_Simon",
   "Mode": "Default",
@@ -1001,6 +1001,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\simon\\source\\repos\\Labb1MVC_Simon\\Labb1MVC_Simon\\wwwroot\\lib\\jquery-toast\\dist\\jquery.toast.min.css",
+      "SourceId": "Labb1MVC_Simon",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\simon\\source\\repos\\Labb1MVC_Simon\\Labb1MVC_Simon\\wwwroot\\",
+      "BasePath": "_content/Labb1MVC_Simon",
+      "RelativePath": "lib/jquery-toast/dist/jquery.toast.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-toast\\dist\\jquery.toast.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\simon\\source\\repos\\Labb1MVC_Simon\\Labb1MVC_Simon\\wwwroot\\lib\\jquery-toast\\dist\\jquery.toast.min.js",
+      "SourceId": "Labb1MVC_Simon",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\simon\\source\\repos\\Labb1MVC_Simon\\Labb1MVC_Simon\\wwwroot\\",
+      "BasePath": "_content/Labb1MVC_Simon",
+      "RelativePath": "lib/jquery-toast/dist/jquery.toast.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-toast\\dist\\jquery.toast.min.js"
     },
     {
       "Identity": "C:\\Users\\simon\\source\\repos\\Labb1MVC_Simon\\Labb1MVC_Simon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",

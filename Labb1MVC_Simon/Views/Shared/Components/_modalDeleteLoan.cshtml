@@ -14,18 +14,18 @@
                 <h6>@Model.Book.Title</h6><br />
                 <small class="text-muted">by:</small>
                 <h7>@Model.Book.Author</h7>
-            </div>            
+            </div>
         </div>
     </div>
     <div class="modal-footer">
         <form asp-action="DeleteLoanConfirmed" asp-route-id="@Model.LoanId">
             <input type="hidden" asp-for="@Model.LoanId" />
-        <button type="submit" class="btn btn-success"><i class="fa-solid fa-circle-check"></i>
-        </button>
+            <button type="submit" class="btn btn-success">
+                <i class="fa-solid fa-circle-check"></i>
+            </button>
         </form>
-
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-circle-xmark"></i></button>
-
+        <button id="deletesuccess" type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-circle-xmark"></i></button>
     </div>
 </div>
+
 

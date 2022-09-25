@@ -43,6 +43,13 @@ namespace Labb1MVC_Simon.Controllers
             .Include(l => l.Customer)
             .ToListAsync());
 
+
+        //shown when loan has been deleted
+        public async Task<IActionResult> ULoanList() => View
+            (await _context.Loans.Include(l => l.Book)
+            .Include(l => l.Customer)
+            .ToListAsync());
+
         // GET: Library/CustomerDetails/5
         public async Task<IActionResult> CustomerDetails(int? id)
         {
@@ -102,13 +109,9 @@ namespace Labb1MVC_Simon.Controllers
             await _context.SaveChangesAsync();
         }
 
-
-
         //GET all customers
         public async Task<IActionResult> CustomerList() =>
             View(await _context.Customers.Include(l => l.Loans).ToListAsync());
-
-
 
         // GET: Library/Create
         public IActionResult CreateLoan()
@@ -194,7 +197,7 @@ namespace Labb1MVC_Simon.Controllers
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Start));
+            return RedirectToAction(nameof(ULoanList));
         }
 
         // GET: Library/DeleteCustomer/5

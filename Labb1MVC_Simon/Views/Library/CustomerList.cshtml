@@ -59,7 +59,7 @@
     </div>
 </div>
 @section scripts{
-    <script type="text/javascript">
+    <script>
         $(".table").on("click", "#deletebtn", function () {
             var id = $(this).closest("tr").find("td").eq(4).attr("id")
             $.ajax({

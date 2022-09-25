@@ -39,10 +39,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeVxDdXN0b21lckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/simon/source/repos/Labb1MVC_Simon/Labb1MVC_Simon/Views/Library/DeleteCustomer.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeVxEZWxldGVDdXN0b21lci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/simon/source/repos/Labb1MVC_Simon/Labb1MVC_Simon/Views/Library/DeleteLoan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeVxEZWxldGVMb2FuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -53,6 +49,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/simon/source/repos/Labb1MVC_Simon/Labb1MVC_Simon/Views/Library/Start.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeVxTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simon/source/repos/Labb1MVC_Simon/Labb1MVC_Simon/Views/Library/ULoanList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeVxVTG9hbkxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/simon/source/repos/Labb1MVC_Simon/Labb1MVC_Simon/Views/Shared/Components/_bookCard.cshtml]
