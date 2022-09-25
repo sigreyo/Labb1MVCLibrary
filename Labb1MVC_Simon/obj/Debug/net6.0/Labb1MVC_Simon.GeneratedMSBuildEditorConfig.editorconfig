@@ -39,6 +39,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeVxDdXN0b21lckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/simon/source/repos/Labb1MVC_Simon/Labb1MVC_Simon/Views/Library/DeleteCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeVxEZWxldGVDdXN0b21lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/simon/source/repos/Labb1MVC_Simon/Labb1MVC_Simon/Views/Library/DeleteLoan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeVxEZWxldGVMb2FuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -59,8 +63,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX2Jvb2tEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/simon/source/repos/Labb1MVC_Simon/Labb1MVC_Simon/Views/Shared/Components/_modalDelete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX21vZGFsRGVsZXRlLmNzaHRtbA==
+[C:/Users/simon/source/repos/Labb1MVC_Simon/Labb1MVC_Simon/Views/Shared/Components/_modalDeleteCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX21vZGFsRGVsZXRlQ3VzdG9tZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simon/source/repos/Labb1MVC_Simon/Labb1MVC_Simon/Views/Shared/Components/_modalDeleteLoan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX21vZGFsRGVsZXRlTG9hbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/simon/source/repos/Labb1MVC_Simon/Labb1MVC_Simon/Views/Shared/Components/_modalEditCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX21vZGFsRWRpdEN1c3RvbWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/simon/source/repos/Labb1MVC_Simon/Labb1MVC_Simon/Views/Shared/Error.cshtml]

@@ -1,0 +1,33 @@
+﻿@model Customer
+
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">Are you sure you want to delete this customer?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="@Model.Avatar" />
+            </div>
+            <div class="col-sm-6">
+                <h6>@Model.FullName</h6><br />
+                <h7>@Model.Address</h7> <br />
+                <h7>@Model.Phone</h7>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <form asp-action="DeleteCustomerConfirmed" asp-route-id="@Model.CustomerId">
+            <input type="hidden" asp-for="@Model.CustomerId" />
+            <button type="submit" class="btn btn-success">
+                <i class="fa-solid fa-circle-check"></i>
+            </button>
+        </form>
+
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-circle-xmark"></i></button>
+
+    </div>
+</div>
+

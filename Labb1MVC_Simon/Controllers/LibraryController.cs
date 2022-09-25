@@ -52,14 +52,14 @@ namespace Labb1MVC_Simon.Controllers
                 return NotFound();
             }
 
-            var cust = await _context.Customers                                
+            var cust = await _context.Customers
                 .FirstOrDefaultAsync(m => m.CustomerId == id);
             if (cust == null)
             {
                 return NotFound();
             }
 
-            return View(new CustomerDetailsViewModel { LoansWithBooks = _context.Loans.Include(x=>x.Book).ToList(), Customer = cust});
+            return View(new CustomerDetailsViewModel { LoansWithBooks = _context.Loans.Include(x => x.Book).ToList(), Customer = cust });
         }
 
         //GET: Library/BookDetails/4
@@ -106,7 +106,7 @@ namespace Labb1MVC_Simon.Controllers
 
         //GET all customers
         public async Task<IActionResult> CustomerList() =>
-            View(await _context.Customers.Include(l=>l.Loans).ToListAsync());            
+            View(await _context.Customers.Include(l => l.Loans).ToListAsync());
 
 
 
@@ -134,11 +134,11 @@ namespace Labb1MVC_Simon.Controllers
             ViewData["BookId"] = new SelectList(_context.Books, "BookId", "BookId", loan.BookId);
             ViewData["CustomerId"] = new SelectList(_context.Customers, "CustomerId", "Address", loan.CustomerId);
             return View(loan);
-        } 
-        
+        }
+
         // GET: Library/Create
         public IActionResult CreateCustomer()
-        {            
+        {
             return View();
         }
 
@@ -151,12 +151,12 @@ namespace Labb1MVC_Simon.Controllers
             {
                 var ava = new Bogus.DataSets.Internet();
                 cust.Avatar = ava.Avatar();
-                
+
                 _context.Add(cust);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Start));
             }
-            
+
             return View(cust);
         }
 
@@ -169,26 +169,25 @@ namespace Labb1MVC_Simon.Controllers
             }
 
             var loan = await _context.Loans
-                .Include(b=>b.Book)
-                .Include(c=>c.Customer)
+                .Include(b => b.Book)
+                .Include(c => c.Customer)
                 .FirstOrDefaultAsync(m => m.LoanId == id);
             if (loan == null)
             {
                 return NotFound();
             }
 
-            return PartialView("components//_modalDelete", loan);
+            return PartialView("components//_modalDeleteLoan", loan);
             //return View(loan);
         }
 
         // POST: Library/DeleteLoan/5
-        [HttpPost, ActionName("DeleteConfirmed")]
-        //[Route("[controller]/DeleteLoan/{id:int}")]
+        [HttpPost, ActionName("DeleteLoanConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteLoan(int id)
         {
-            
-            var loan = await _context.Loans.FirstOrDefaultAsync(m=>m.LoanId == id);
+
+            var loan = await _context.Loans.FirstOrDefaultAsync(m => m.LoanId == id);
             if (loan != null)
             {
                 _context.Loans.Remove(loan);
@@ -206,31 +205,70 @@ namespace Labb1MVC_Simon.Controllers
                 return NotFound();
             }
 
-            var loan = await _context.Customers
+            var cust = await _context.Customers
                 .FirstOrDefaultAsync(m => m.CustomerId == id);
-            if (loan == null)
+            if (cust == null)
             {
                 return NotFound();
             }
 
-            return View(loan);
+            return PartialView("components//_modalDeleteCustomer", cust);
         }
 
         // POST: Library/Delete/5
-        [HttpPost, ActionName("DeleteCustomer")]
+        [HttpPost, ActionName("DeleteCustomerConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteCustomer(int id)
         {
 
-            var loan = await _context.Customers.FindAsync(id);
-            if (loan != null)
+            var cust = await _context.Customers.FindAsync(id);
+            if (cust != null)
             {
-                _context.Customers.Remove(loan);
+                _context.Customers.Remove(cust);
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Start));
+            return RedirectToAction(nameof(CustomerList));
         }
+
+        // GET: Transactions/Edit/5
+        public async Task<IActionResult> EditCustomer(int? id)
+        {
+            if (id == null || _context.Customers == null)
+            {
+                return NotFound();
+            }
+
+            var cust = await _context.Customers.FindAsync(id);
+            if (cust == null)
+            {
+                return NotFound();
+            }
+            return PartialView("components//_modalEditCustomer", cust);
+
+        }
+
+        // POST: Transactions/Edit/5        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditCustomerConfirmed(Customer cust)
+        {         
+
+            if (ModelState.IsValid)
+            {
+
+                _context.Update(cust);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(CustomerList));
+            }
+
+            return View(nameof(CustomerList));
+        }
+
+
+
+
         private bool LoanExists(int id)
         {
             return _context.Loans.Any(e => e.LoanId == id);
